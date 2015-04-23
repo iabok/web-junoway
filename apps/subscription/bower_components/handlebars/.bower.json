@@ -1,0 +1,19 @@
+{
+  "name": "handlebars-amd",
+  "version": "1.0.0",
+  "main": [
+    "handlebars.js",
+    "handlebars.runtime.js"
+  ],
+  "dependencies": {},
+  "homepage": "https://github.com/phawk/handlebars-amd",
+  "_release": "1.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.0.0",
+    "commit": "3590c1c9b7b94f68fbe29383226b99fbfce3c9d2"
+  },
+  "_source": "git://github.com/phawk/handlebars-amd.git",
+  "_target": "*",
+  "_originalSource": "phawk/handlebars-amd"
+}

@@ -1,0 +1,599 @@
+ <div class="navbar navbar-sub navbar-static-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html"></a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="juno-tabs navbar-right">
+                <li><a class="btn btn-lg btn-hiring" id="btn-hiring" href="#" role="button">We Are Hiring</a></li>
+                <li><a class="btn btn-lg btn-login" id="btn-login" href="#" role="button">Login</a></li>
+              </ul>
+            </div>
+          </div>
+ </div>
+  <div class="sub-content-bg">
+  <div class="container">
+    <div class="sub-content">
+        <div class="sub-main-header col-md-12">
+          <div class="row">
+          <span class="sub-header-size">Welcome to Junoway Subscriptions</span>
+          </div>
+          <div class="row"> 
+          <span class="sub-small-text">Exclusive <span style="color:#6f9fb7;">Access</span> to Registered Healthcare <span style="color:#EEA236;">Practitioners and Facilitators.</span></p>
+          </div>
+        </div>
+  </div>
+  </div>
+</div>
+ <div style="z-index:9999;" id="error-warning" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="error-header modal-header">
+                <button type="button" class="sub-popup-close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="sub-warning-title fa-2x">Warning!</h4>
+            </div>
+            <div class="error-body modal-body">
+                    <div class="alert alert-success">
+                        <b>Success!</b> saved successfully
+                    </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn sub-btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container sub-row-space">
+<div class="juno-timeline col-md-offset-1">
+    <ul>
+      <li class="timeline-active-1">
+      <i class="icon-user"></i></li>
+      <li class="timeline-active-2"><i class="icon-users"></i></li>
+      <li class="timeline-active-3"><i class="icon-phone-1"></i></li>
+    </ul> 
+</div> 
+  <form name="facilitatorForm" method="POST" id="sub-facilitator">
+   <div class="timeline timeline-form-border col-md-8">
+<div id="security-info" style="margin-top:50px;">
+    <div class="sub-join">
+      <h1 class="sub-reponsive-text"> Facilitators: Security Information</h1>
+      <span class="sub-small-header" style="color:red;">All Fields Marked (*) Must Be Filled.</span>
+    </div>
+<div class="sub-form-horizontal">
+    <div class="form-group company-error">  
+        <label for="companyName" class="col-sm-2 col-md-3 sub-control-label required">Company Name</label>
+        <div class="col-sm-10 col-md-4">
+          <input type="text" name="companyName" class="form-control-1" id="companyName" placeholder="Write your Company Name">
+        </div>
+    </div>
+ <div class="sub-row-space"></div>
+    <div class="form-group tin-error">
+        <label for="companyTin" class="col-sm-2 col-md-3 sub-control-label required">Company TIN</label>
+        <div class="col-sm-10 col-md-4">
+          <input type="text" name="companyTin" class="form-control-1" id="companyTin" placeholder="TIN No.">
+        </div>
+    </div>
+<div class="sub-row-space"></div>
+    <div class="form-group regno-error regNo">
+        <label for="RegNO" class="col-sm-2 col-md-3 sub-control-label required">Reg. No.</label>
+        <div class="col-sm-10 col-md-4">
+          <input type="text" name="regNo" class="form-control-1" id="regNo" placeholder="Registartion Number">
+        </div>
+    </div>
+
+<div class="sub-row-space"></div>
+    <div class="form-group owner-errors">
+        <label for="ownersTitle" class="col-sm-2 col-md-3 sub-control-label required">Owners Title</label>
+        <div class="col-sm-10 col-md-4">
+          <input type="text" name="ownersTitle" class="form-control-1" id="ownersTitle" placeholder="Write the Owners Title">
+        </div>
+    </div>
+</div>
+<div class="sub-row-space"></div>
+<div class="sub-personal-form-inline">
+      <div class="form-group">
+        <label class="sub-personal-label required">Name of Employer</label>
+      </div>
+      <div class="form-group fname-error">
+        <label class="sr-only" for="firstName">First Name</label>
+        <input type="text" name="firstName" class="form-control-1" id="firstName" placeholder="First Name">
+      </div>
+      <div class="form-group">
+        <label class="sr-only" for="lastName">Last Name</label>
+        <input type="text" name="lastName" class="form-control-1" id="lastName" placeholder="Last Name">
+      </div>
+
+      <div class="form-group lname-error">
+        <label class="sr-only" for="middleName">Middle Name</label>
+        <input type="text" name="middleName" class="form-control-1" id="middleName" placeholder="Middle Name">
+      </div>
+</div>
+
+<div class="sub-row-space"></div>
+
+<div class="sub-form-horizontal">
+    <div class="form-group email-error">
+      <label for="email" class="col-sm-2 col-md-3 sub-control-label required">Email</label>
+        <div class="col-sm-10 col-md-4">
+          <input type="email" name="email" class="form-control-1" id="email" placeholder="Email Address">
+        </div>
+        <span class="help-block hidden"></span>
+    </div>
+<div class="sub-row-space"></div>
+    <div class="form-group password-error">
+        <label for="password" class="col-sm-2 col-md-3 sub-control-label required">Password</label>
+        <div class="col-sm-10 col-md-4">
+          <input type="password" name="password" class="form-control-1" id="password" placeholder="Password">
+        </div>
+        <span class="help-block hidden"></span>
+    </div>
+<div class="sub-row-space"></div>
+    <div class="form-group">
+      <label for="confirmPassword" class="col-sm-2 col-md-3 sub-control-label required">Confirm Password</label>
+        <div class="col-sm-10 col-md-4">
+          <input type="password" name="confirmPassword" class="form-control-1" id="password1" placeholder="Confirm Password">
+        </div>
+        <span class="help-block hidden"></span>
+     </div>
+<div class="sub-row-space"></div>
+      <div class="sub-row-space"></div>
+            <div class="form-group">
+                <label for="terms" class="col-sm-2 col-md-3 sub-control-label required">Accept EULA:</label>
+                <div class="col-sm-offset-2 col-sm-10 sub-terms">
+                    <div class="checkbox">
+                        <input type="checkbox" value="true" name="terms"> <a href="" class="sub-accept-terms" >Statement of Terms & Responsibilities</a>
+                    </div>
+                    <span class="help-block"></span>
+                </div>
+            </div>
+  </div>
+<div class="sub-row-space"></div>
+  <div class="sub-facilitator-form-inline clearfix">    
+     <div class="col-sm-offset-2 col-md-10">
+          <div class="form-group">
+            <ul class="sub-next-tabs">
+                  <li><a href="#subscription"><span class="btn sub-btn-cancel">Back</span></a></li>
+                  <li><a> <span id="personalNext" class="btn sub-btn-success personalNext">Next</span></a></li>
+            </ul>  
+          </div>
+      </div>  
+  </div>
+   <div class="sub-row-space"></div>
+</div>
+ 
+<!-- Section One End - Section Two --------------------------------------------------------------------- -->
+<div id="personal-info">
+    <div class="sub-join">
+        <h1 class="sub-reponsive-text"> Facilitators: Administrators Information</h1>
+        <span class="sub-small-header" style="color:red;">All Fields Marked (*) Must Be Filled.</span>
+    </div>
+      <div class="sub-facilitator-form-inline">
+      <div class="form-group">
+        <label class="sub-personal-label required">Names:</label>
+      </div>
+      <div class="form-group admin-firstName-error">
+        <label class="sr-only" for="admin_firstName">First Name</label>
+        <input type="text" name="admin_firstName" class="form-control-1" id="admin_firstName" placeholder="First Name">
+         
+      </div>
+      <div class="form-group admin-lastName-error">
+        <label class="sr-only" for="admin_lastName">Last Name</label>
+        <input type="text" name="admin_lastName" class="form-control-1" id="admin_lastName" placeholder="Last Name">
+      </div>
+
+      <div class="form-group">
+        <label class="sr-only" for="middleName">Middle Name</label>
+        <input type="text" name="admin_middleName" class="form-control-1" id="middleName" placeholder="Middle Name">
+      </div>
+    </div>
+<div class="sub-row-space"></div>
+
+ <div class="sub-form-horizontal">
+      <!-- Names -->
+      <div class="form-group">
+        <label for="admin_age" class="col-sm-2 col-md-3 sub-control-label required">Age:</label>
+        <div class="col-sm-10 col-md-4">
+            <input type="number" class="form-control-1" id="admin_age" name="admin_age" placeholder="Your Age" />
+        </div>
+        <span class="help-block hidden"></span>
+      </div>
+  <div class="sub-row-space"></div>
+      <div class="form-group">
+        <label  for="admin_sex" class="col-sm-2 col-md-3 sub-control-label required">Sex:</label>
+          <div class="col-sm-10 col-md-4">
+            <select class="form-control-1" name="admin_sex">
+            </select>
+          </div>
+      </div>
+<div class="sub-row-space"></div>
+      <div class="form-group">
+        <label for="admin_nationality" class="col-sm-2 col-md-3 sub-control-label required">Nationality:</label>
+        <div class="col-sm-10 col-md-4">
+            <select class="form-control-1" name="admin_nationality" id="nationality">
+            </select>
+        </div>
+      </div>
+<div class="sub-row-space"></div>
+    <div class="form-group">
+        <label for="admin_experience" class="col-sm-2 col-md-3 sub-control-label required">Professional Experience:</label>
+        <div class="col-sm-10 col-md-4">
+            <select name="admin_experience" class="form-control-1" id="admin_experience">
+            </select>
+      </div>
+    </div>
+</div>
+
+<div class="sub-row-space"></div>
+
+    <h1 class="sub-reponsive-text"> Permanent Address </h1>
+    <div class="sub-row-space"></div>
+
+    <div class="sub-form-horizontal">
+      <!-- Names -->
+      <div class="form-group admin-country-error">
+        <label for="admin_country" class="col-sm-2 col-md-3 sub-control-label required">Country:</label>
+        <div class="col-sm-10 col-md-4">
+            <select name="admin_Country" id="admin_Country" class="form-control-1" placeholder="Select a Country" >
+            </select>
+        </div>
+      </div>
+
+    <div class="sub-row-space"></div>
+
+      <div class="form-group admin-state-error">
+        <label for="admin_state" class="col-sm-2 col-md-3 sub-control-label required">State / District:</label>
+          <div class="col-sm-10 col-md-4">
+              <select name="admin_state" id="admin_state" class="form-control-1" placeholder="Select a State">      
+              </select>
+          </div>
+      </div>
+      <div class="sub-row-space"></div>
+
+      <div class="form-group">
+        <label for="admin_city" class="col-sm-2 col-md-3 sub-control-label">City:</label>
+          <div class="col-sm-10 col-md-4">
+              <select name="admin_city" id="admin_city" class="form-control-1" placeholder="Select a City">
+              </select>
+        </div>
+      </div>
+<div class="sub-row-space"></div>
+    <div class="form-group admin-zipCode-error admin_zipCode">
+        <label for="admin_zipCode" class="col-sm-2 col-md-3 sub-control-label required">Zip Code:</label>
+        <div class="col-sm-10 col-md-4">
+          <input type="number" name="admin_zipCode" class="form-control-1" id="admin_zipCode" placeholder="00001" >
+      </div>
+    </div>
+<div class="sub-row-space"></div>
+      <div class="form-group">
+        <label for="admin_streetLine1" class="col-sm-2 col-md-3 sub-control-label">Street Line 1:</label>
+        <div class="col-sm-10 col-md-4">
+          <input type="type" name="admin_streetLine1" class="form-control-1" id="admin_streetLine1" placeholder="eg. Livingstone Drive" >
+      </div>
+    </div>
+    <div class="sub-row-space"></div>
+
+      <div class="form-group admin_streetLine2">
+        <label for="admin_streetLine2" class="col-sm-2 col-md-3 sub-control-label">Street Line 2:</label>
+        <div class="col-sm-10 col-md-4">
+          <input type="text" name="admin_streetLine2" class="form-control-1" id="admin_streetLine2" placeholder="eg. MUK. No.3">
+      </div>
+    </div>
+    <div class="sub-row-space"></div>
+
+      <div class="form-group">
+        <label for="admin_areaCode" class="col-sm-2 col-md-3 sub-control-label">Area Code:</label>
+        <div class="col-sm-10 col-md-4">
+          <input type="text" name="admin_areaCode" class="form-control-1" id="admin_areaCode" placeholder="256" >
+      </div>
+    </div>
+    <div class="sub-row-space"></div>
+
+      <div class="form-group">
+        <label for="admin_postalCode" class="col-sm-2 col-md-3 sub-control-label">Postal Code:</label>
+        <div class="col-sm-10 col-md-4">
+          <input type="text" name="admin_postalCode" class="form-control-1" id="admin_postalCode" placeholder="256">
+      </div>
+    </div>
+</div>
+    <div class="sub-row-space"></div>
+
+     <h1 class="sub-reponsive-text">Contact Address</h1>
+
+    <div class="sub-row-space"></div>
+
+     <div class="sub-form-horizontal">
+      <div class="form-group admin-email-error">
+        <label for="admin_email" class="col-sm-2 col-md-3 sub-control-label required">Email Address:</label>
+        <div class="col-sm-10 col-md-4">
+          <input type="email" name="admin_email" class="form-control-1" id="admin_email" placeholder="Email Address">
+      </div>
+      <span class="help-block hidden"></span>
+    </div> 
+
+    <div class="sub-row-space"></div>
+
+        <div class="form-group admin-mobiCode1-error">
+          <label for="admin_mobiCode1" class="col-sm-2 col-md-3 sub-control-label required">Mobile Number:</label>
+          <div class="col-sm-10 col-md-4">
+            <input type="tel" name="admin_mobiCode1" class="form-control-1" id="admin_mobiCode1"/>
+        </div>
+    </div>
+
+    <div class="sub-row-space"></div>
+
+        <div class="form-group">
+          <label for="admin_homeCode1" class="col-sm-2 col-md-3 sub-control-label">Land Line Number:</label>
+          <div class="col-sm-10 col-md-4">
+            <input type="tel" name="admin_homeCode1" class="form-control-1" id="admin_homeCode1"/>
+        </div>
+
+    </div>
+
+    <div class="sub-row-space"></div> 
+        <div class="form-group admin-faxCode1-error">
+          <label for="admin_faxCode1" class="col-sm-2 col-md-3 sub-control-label required">Fax Number:</label>
+          <div class="col-sm-10 col-md-4">
+            <input type="tel" name="admin_faxCode1" class="form-control-1" id="admin_faxCode1"/>
+        </div>
+    </div>
+
+  <div class="sub-row-space"></div>
+      <div class="form-group">
+        <label for="admin_website" class="col-sm-2 col-md-3 sub-control-label">Website/LinkiedIn Profile:</label>
+        <div class="col-sm-10 col-md-4">
+          <input type="text" name="admin_website" class="form-control-1" id="admin_website" placeholder="Website or LinkedIn url" >
+      </div>
+    </div>
+  </div>
+  <div class="sub-row-space"></div>
+
+    <div class="sub-facilitator-form-inline clearfix">
+      <div class="col-sm-offset-2 col-sm-10">
+          <div class="form-group">
+            <ul class="sub-next-tabs">
+                  <li><a><span class="btn sub-btn-cancel securityBack">Back</span></a></li>
+                  <li><a><span class="btn sub-btn-success proffessionalNext">Next</span></a></li>
+            </ul>     
+          </div>
+      </div>
+    </div>
+</div>
+<div class="sub-row-space"></div>
+<!-- Section Two End - Section Three --------------------------------------------------------------------- -->
+<div id="proffessional-info">
+    <div class="sub-join">
+        <h1 class="sub-reponsive-text"> Facilitator: Company Information</h1>
+        <span class="sub-small-header" style="color:red;">All Fields Marked (*) Must Be Filled.</span>
+    </div>
+    <div class="sub-form-horizontal">
+    <div class="form-group">
+      <label for="companyTin" class="col-sm-2 col-md-3 sub-control-label required">Confirm Company TIN:</label>
+        <div class="col-sm-10 col-md-4">
+          <input type="text" name="companyTin2" class="form-control-1" id="companyTin2" placeholder="TIN No.">
+          </div>
+          <span class="help-block hidden"><i class="glyphicon glyphicon-alert"></i></span>
+        </div>
+      <div class="sub-row-space"></div>
+      <div class="form-group">
+       <label for="Reg No." class="col-sm-2 col-md-3 sub-control-label required">Confirm Reg No:</label>
+        <div class="col-sm-10 col-md-4">
+          <input type="text" name="regNo2" class="form-control-1" id="regNo2" placeholder="Registartion Number">
+          </div>
+          <span class="help-block hidden"><i class="glyphicon glyphicon-alert"></i></span>
+    </div>
+
+<div class="sub-row-space"></div>
+        <div class="form-group">
+          <label for="issuing" class="col-sm-2 col-md-3 sub-control-label required">Issuing Authority:</label>
+          <div class="col-sm-10 col-md-4">
+          <input type="text" name="issuing" class="form-control-1" id="issuing" placeholder="Write Issuing Authority">
+        </div>
+      </div>
+
+<div class="sub-row-space"></div>
+
+        <div class="form-group dateOfIssue-error">
+          <label for="dateOfIssue" class="col-sm-2 col-md-3 sub-control-label required">Date Of Issue:</label>
+          <div class="col-sm-10 col-md-4">
+          <input type="text" name="dateOfIssue" class="form-control-1" id="dateOfIssue" placeholder="Choose from the Calender">
+        </div>
+      </div>
+
+<div class="sub-row-space"></div>
+
+        <div class="form-group">
+          <label for="dateOfExpiry" class="col-sm-2 col-md-3 sub-control-label required">Date Of Expiry:</label>
+        <div class="col-sm-10 col-md-4">
+          <input type="text" name="dateOfExpiry" class="form-control-1" id="dateOfExpiry" placeholder="Choose from the Calender">
+        </div>
+      </div>
+<div class="sub-row-space"></div>
+ 
+      <div class="form-group">
+          <label  for="ageOfCompany" class="col-sm-2 col-md-3 sub-control-label required">Age of Company:</label>
+          <div class="col-sm-10 col-md-4">
+              <select name="ageOfCompany" class="form-control-1">
+              </select>
+        </div>
+      </div>
+</div>
+    <div class="sub-row-space"></div>
+    <h1 class="sub-reponsive-text">Company Address</h1>
+    <div class="sub-row-space"></div>
+
+    <div class="sub-form-horizontal">
+      <!-- Names -->
+      <div class="form-group">
+        <label for="country" class="col-sm-2 col-md-3 sub-control-label required">Country:</label>
+        <div class="col-sm-10 col-md-4">
+            <select name="Country" id="Country" class="form-control-1" placeholder="Select a Country">
+            </select>
+        </div>
+      </div>
+
+
+    <div class="sub-row-space"></div>
+
+      <!-- Names -->
+      <div class="form-group">
+        <label for="state" class="col-sm-2 col-md-3 sub-control-label required">State / District:</label>
+        <div class="col-sm-10 col-md-4">
+            <select name="state" id="state" class="form-control-1" placeholder="Select a State">
+            </select>
+        </div>
+      </div>
+      <div class="sub-row-space"></div>
+       <div class="form-group">
+        <label for="city" class="col-sm-2 col-md-3 sub-control-label">City:</label>
+        <div class="col-sm-10 col-md-4">
+              <select name="city" id="city" class="form-control-1" placeholder="Select a city">
+              </select>
+          </div>
+      </div>
+      <div class="sub-row-space"></div>
+      <div class="form-group">
+        <label for="zipCode" class="col-sm-2 col-md-3 sub-control-label required">Zip Code:</label>
+        <div class="col-sm-10 col-md-4">
+          <input type="type" name="zipCode" class="form-control-1" id="zipCode" placeholder="00001" >
+      </div>
+    </div>
+    <div class="sub-row-space"></div>
+      <div class="form-group">
+        <label for="streetLine1" class="col-sm-2 col-md-3 sub-control-label">Street Line 1:</label>
+          <div class="col-sm-10 col-md-4">
+            <input type="type" name="streetLine1" class="form-control-1" id="streetLine1" placeholder="eg. Livingstone Drive" >
+          </div>
+      </div>
+    <div class="sub-row-space"></div>
+
+      <div class="form-group">
+        <label for="streetLine2" class="col-sm-2 col-md-3 sub-control-label">Street Line 2:</label>
+        <div class="col-sm-10 col-md-4">
+          <input type="text" name="streetLine2" class="form-control-1" id="streetLine2" placeholder="eg. MUK. No.3" >
+      </div>
+    </div>
+    <div class="sub-row-space"></div>
+
+      <div class="form-group">
+        <label for="areaCode" class="col-sm-2 col-md-3 sub-control-label">Area Code:</label>
+        <div class="col-sm-10 col-md-4">
+          <input type="text" name="areaCode" class="form-control-1" id="areaCode" placeholder="256" >
+      </div>
+    </div>
+    <div class="sub-row-space"></div>
+
+      <div class="form-group">
+        <label for="postalCode" class="col-sm-2 col-md-3 sub-control-label">Postal Code:</label>
+        <div class="col-sm-10 col-md-4">
+          <input type="text" name="postalCode" class="form-control-1" id="postalCode" placeholder="256" >
+      </div>
+    </div>
+  </div>
+    <div class="sub-row-space"></div>
+
+    <h1 class="sub-reponsive-text">Company Contact</h1>
+
+    <div class="sub-row-space"></div>
+
+     <div class="sub-form-horizontal">
+      <div class="form-group">
+        <label for="website" class="col-sm-2 col-md-3 sub-control-label">Website:</label>
+        <div class="col-sm-10 col-md-4">
+          <input type="text" name="website" class="form-control-1" id="website" placeholder="Website" >
+      </div>
+    </div> 
+
+    <div class="sub-row-space"></div>
+        <div class="form-group">
+          <label for="code1" class="col-sm-2 col-md-3 sub-control-label required">Mobile Number:</label>
+          <div class="col-sm-10 col-md-4">
+            <input type="tel" name="mobiCode1" class="form-control-1" id="mobiCode1"/>
+        </div>
+    </div>
+
+    <div class="sub-row-space"></div>
+
+      <div class="form-group">
+          <label for="teleCode1" class="col-sm-2 col-md-3 sub-control-label required">Telephone Line 1:</label>
+          <div class="col-sm-10 col-md-4">
+            <input type="tel" name="teleCode1" class="form-control-1" id="teleCode1"/>
+        </div>
+      </div>
+
+    <div class="sub-row-space"></div>
+
+        <div class="form-group">
+          <label for="tele1Code1" class="col-sm-2 col-md-3 sub-control-label">Telephone Line 2:</label>
+          <div class="col-sm-10 col-md-4">
+            <input type="tel" name="tele1Code1" class="form-control-1" id="tele1Code1"/>
+        </div>
+    </div>
+
+
+    <div class="sub-row-space"></div>
+
+        <div class="form-group">
+          <label for="code1" class="col-sm-2 col-md-3 sub-control-label required">Fax Number:</label>
+          <div class="col-sm-10 col-md-4">
+            <input type="tel" name="faxCode1" class="form-control-1" id="faxCode1"/>
+        </div>
+    </div>
+
+    <div class="sub-row-space"></div> 
+
+      <div class="form-group">
+        <label for="tourist" class="col-sm-2 col-md-3 sub-control-label">Nearest Tourism attraction to Premises:</label>
+        <div class="col-sm-10 col-md-4">
+          <input type="text" name="tourist" class="form-control-1" id="tourist" placeholder="Name the Tourist Attraction">
+      </div>
+  </div>
+</div>
+  <div class="sub-row-space"></div>
+  <div class="sub-personal-form-inline clearfix">
+      <div class="col-sm-offset-2 col-sm-10">
+          <div class="form-group">
+              <ul class="sub-next-tabs">
+                      <li><a><span class="btn sub-btn-cancel personalBack"> Back<span></a></li>
+                      <li><a><input id="signUpButton" class="btn sub-btn-success" type="submit" value="Submit"></a></li>
+              </ul>   
+          </div> 
+        </div>     
+    </div> 
+    <div class="sub-row-space"></div>
+  </div>
+</form>
+</div>
+</div>
+</div>
+  <!-- Footer-->
+<div id="footer">
+  <div class=" footer-bg footer-background">
+    <div class="container">
+      <div class="col-md-4 juno-copyright">
+        <div>Junoway &copy All rights Reserved 2014</div>
+      </div>
+
+      <div class="col-md-6 juno-items-right">
+        <div class="juno-footer-links">
+            <ul class="juno-link-items">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Policy</a></a></li>
+              <li><a href="#">Advertise</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+      </div>
+        <div class="row-space"></div>
+    </div><!-- /- End of container-->
+
+  </div>
+</div><!-- /-End of footer-->

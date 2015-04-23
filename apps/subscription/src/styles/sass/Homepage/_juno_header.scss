@@ -1,0 +1,172 @@
+/* Homepage Header stylesheet */
+
+@import "compass/typography/lists/horizontal-list";
+@import "compass/utilities/general/clearfix";
+
+.navbar-inverse{
+	//@extend .navbar-inverse;
+	background-color:$header-background;
+	background:transparent;
+	height:50px;
+	border:none;
+}
+
+.navbar-brand{
+	background-image: url('../images/junoway_logo.png');
+	width:150px;
+	height:48px;
+	display:block;
+	background-repeat:no-repeat;
+	visibility:visible;
+	position:relative;
+	clip:auto;
+	top:10px;
+	//left:10px;
+}
+
+ul.juno-tabs {
+	@include horizontal-list(10px); 
+	@include transition-ease(0.35s);
+}
+
+#myCarousel{
+	@media screen and (max-width: 360px){
+		@include clearfix;
+		margin-bottom:-450px;
+	} 
+
+}
+
+.juno-hiring{
+	//background-color:#00a99d;
+	width:100px;
+	height:50px;
+	//@include padding_properties_all(top, -10px);
+
+}
+
+.juno-login{
+	@extend .juno-hiring;
+	//background-color:#39b54a;
+	//@include border_properties_all(left, 1px, solid, #525656);
+}
+
+.juno-fadeIn{
+	@extend .fadeIn;
+}
+
+.slides{
+	padding:0;
+	margin:0;
+	& li{
+	padding:0;
+	margin:0;
+	max-height: 500px;
+
+	}
+}
+ 
+.flexslider{
+
+}
+
+.juno-caption{
+	//background-color:lighten(#000000, 60%);
+	//background:transparent;
+	position:relative;
+	font-size:bold;
+	top:-450px;
+	height:350px;
+	z-index:9999;
+	clear:both;
+	//font-family:"lato";
+
+
+	& p{
+		color:#ffffff;
+		text-shadow:0px 2px 2px rgba(0, 0, 0, 0.6);
+
+	}
+
+	@media screen and (max-width: 360px){
+		z-index:-9999;
+		p{
+			display:none;
+		}
+		 	
+	} 
+
+	@media screen and (min-width: 360px) and (max-width: 768px) {
+		//z-index:-9999;
+		font-size:14px;
+		position:relative;
+		margin-top:100px;
+		height:200px;
+		font-weight:600;
+	} 
+
+}
+
+.btn-hiring{
+	@extend .btn-warning;
+	border:none;
+	border-radius:0px;
+	font-weight:normal;
+	font-size:14px;
+}
+
+.btn-login{
+	@extend .btn-success;
+	width:100px;
+	border:none;
+	border-radius:0px;
+	font-weight:normal;
+	font-size:14px;
+}
+
+.hiring-note{
+	color:$primary_color;
+	font-size:12px;
+	//font-weight:bold;
+	//text-transform:uppercase;
+	position:relative;
+	color:lighten(#000000, 30%);
+	top:20px;
+	left:10px;
+}
+
+.login-note{
+	@extend .hiring-note;
+	text-align:center;
+	left:30px;
+}
+
+.juno-slider{
+    padding: 0px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 0;
+    width: 100%;
+    position: relative;
+    padding: 0;
+    max-height: 500px;
+    overflow: hidden; 
+    visibility: hidden;
+    left: 0;
+    top: 0;
+    clear: both;
+} 
+
+.btn-join{
+	@extend .btn-member;
+	position:relative;
+	top:-40px;
+	@media screen and (min-width: 360px) and (max-width: 768px) {
+		//z-index:-9999;
+		font-size:14px;
+		font-weight:600;
+	}
+}
+
+/* End Homepage Header stylesheet */

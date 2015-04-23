@@ -1,0 +1,95 @@
+
+@import "compass/utilities/general/clearfix";
+
+/* Homepage Style sheets */
+
+.juno-content{
+	font-size:$font_size;
+	line-height:25px;
+	position:relative;
+	top:30px;
+
+}
+
+.row-space{
+	margin-top:100px;
+}
+
+.info-header{
+	text-indent:30px;
+}
+
+.juno-sub-header-bg{
+	//@include clearfix;
+	background-color:#636363;
+	& h1{
+		color:lighten(#000000, 95%);
+		text-align:center;
+		font-weight:normal;
+		position:relative;
+		top:20px;
+	}
+}
+
+
+.juno-join{
+	position:relative;
+	top:-50px;
+}
+
+.juno-header-note{
+		h1{
+		//margin-top:40px;
+		font-family:$font_family_second;
+		}
+	@media screen and (max-width: 360px){
+		h1{
+		//margin-top:40px;
+		font-family:$font_family_second;
+		font-size:30px;
+		}
+
+	} 
+
+}
+
+.juno-member-join{
+	position:relative;
+	top:-20px;
+	margin-bottom:30px;
+	//font-family:"lato";
+
+	@media screen and (max-width: 360px){
+		//margin-top:40px;
+		position:relative;
+		left:-300px;
+		font-size:12px;
+
+	} 
+
+	@media screen and (min-width: 360px) and (max-width: 768px) {
+		//margin-top:20px;
+		font-size:16px;
+		margin-left:-200px;
+
+	} 
+
+	@media screen and (min-width: 761px) and (max-width:999px) {
+		//margin-top:20px;
+		margin-left:-150px;
+	}
+}
+
+.btn-member{
+	@extend .btn-success;
+	background-color:#00a651;
+	border-radius:0px;
+	border:none;
+	background-position:center;
+	margin-left:300px;
+
+
+
+}
+
+/* End Homepage Style sheets */

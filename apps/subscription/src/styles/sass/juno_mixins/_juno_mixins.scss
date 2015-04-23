@@ -1,0 +1,176 @@
+
+//fonts
+@mixin font_properties($weight, $font-size, $font-name) {
+	font: $weight $font-size/0.5 $font-name, Helvetica, sans-serif;
+	$font-variant: small-caps;
+ }
+
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+//Default Border mixin
+ @mixin border_properties($pixels, $property, $color){
+ 	border: $pixels $property $color;
+ }
+
+ @mixin timeline-position($position, $top-pixels, $left-pixels){
+	position:$position;
+	top:$top-pixels;
+	left:$left-pixels;
+}
+
+//Types:
+//******************
+//top
+//bottom
+//null
+//********************
+//usage
+//**********
+//border_properties_all(top, 1px, solid, #ffffff);
+//*********************************
+ @mixin border_properties_all($type, $pixels, $property, $color ){
+	@if $type == bottom{
+		border-#{$type}: $pixels $property $color;
+	}
+
+	@else if $type == top{
+		border-#{$type}: $pixels $property $color;
+	}
+
+	@else if $type == left{
+		border-#{$type}: $pixels $property $color;
+	}
+
+	@else if $type == right{
+		border-#{$type}: $pixels $property $color;
+	}
+
+	@else {
+		border:$pixels $property $color;
+	}
+}
+
+
+
+ @mixin padding_properties_all($type, $pixels ){
+	@if $type == bottom{
+		padding-#{$type}: $pixels;
+	}
+
+	@else if $type == top{
+		padding-#{$type}: $pixels;
+	}
+
+	@else {
+		padding:$pixels;
+	}
+}
+
+//Rounded border(circles)
+ @mixin rounded_borders($rounding) {
+	-moz-border-radius: $rounding $rounding;
+	-webkit-border-radius: $rounding $rounding;
+	-khtml-border-radius: $rounding $rounding;
+	-o-border-radius: $rounding $rounding;
+		border-radius: $rounding $rounding;
+}
+
+//Types:
+//******************
+//top
+//bottom
+//right
+//left
+//null
+//********************
+//usage
+//**********
+//margin_properties_all(top, 1px, solid, #ffffff);
+//*********************************
+ @mixin margin_properties_all($type, $pixels){
+	@if $type == bottom{
+		margin-#{$type}: $pixels;
+	}
+
+	@else if $type == top{
+		margin-#{$type}: $pixels;
+	}
+
+	@else if $type == left{
+		margin-#{$type}: $pixels;
+	}
+
+	@else if $type == right{
+		margin-#{$type}: $pixels;
+	}
+
+	@else {
+		margin:$pixels;
+	}
+}
+
+@mixin transition-ease($time){
+	-moz-transition: background-color $time ease-in-out, color $time ease-in-out, border-bottom-color $time ease-in-out;
+		-webkit-transition: background-color $time ease-in-out, color $time ease-in-out, border-bottom-color $time ease-in-out;
+			-o-transition: background-color $time ease-in-out, color $time ease-in-out, border-bottom-color $time ease-in-out;
+				-ms-transition: background-color $time ease-in-out, color $time ease-in-out, border-bottom-color $time ease-in-out;
+					transition: background-color $time ease-in-out, color $time ease-in-out, border-bottom-color $time ease-in-out;
+}
+
+//Animations
+@-webkit-keyframes timeline-fontbulger {
+        from {
+		    transform: rotate(0deg);
+		  }
+		  to {
+		    transform: rotate(360deg);
+		}
+}
+
+@mixin links ($link, $visit, $hover, $active) {
+  a {
+    color: $link;
+    &:visited {
+      color: $visit;
+    }
+    &:hover {
+      color: $hover;   
+    }
+    &:active {
+      color: $active;
+    }
+  }
+}
+
+/// Mixin to customize scrollbars
+/// Beware, this does not work in all browsers
+/// @author Hugo Giraudel
+/// @param {Length} $size - Horizontal scrollbar's height and vertical scrollbar's width
+/// @param {Color} $foreground-color - Scrollbar's color
+/// @param {Color} $background-color [mix($foreground-color, white, 50%)] - Scrollbar's color
+/// @example scss - Scrollbar styling
+///   @include scrollbars(.5em, slategray);
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white,  50%)) {
+  // For Google Chrome
+  ::-webkit-scrollbar {
+      width:  $size;
+      height: $size;
+  }
+
+  ::-webkit-scrollbar-thumb {
+      background: $foreground-color;
+  }
+
+  ::-webkit-scrollbar-track {
+      background: $background-color;
+  }
+
+  // For Internet Explorer
+  body {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
+  }
+}

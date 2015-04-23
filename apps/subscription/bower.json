@@ -1,0 +1,18 @@
+{
+  "name": "Junoway",
+  "dependencies": {
+    "jquery": "~2.0.3",
+    "requirejs": "~2.1.8",
+    "mocha": "~1.13.0",
+    "handlebars": "phawk/handlebars-amd",
+    "chai": "~1.8.0",
+    "almond": "~0.2.6",
+    "backbone-amd": "~1.0.0",
+    "underscore-amd": "~1.4.1",
+    "bootstrap": "latest",
+    "spin.js": "~2.0.2",
+    "backbone-validation": "~0.11.3",
+    "backbone.stickit": "~0.8.0",
+    "select2": "git@github.com:select2/select2.git#~3.5.2"
+  }
+}

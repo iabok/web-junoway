@@ -1,0 +1,46 @@
+/* Homepage Footer stylesheet */
+
+@import "compass/typography/lists/horizontal-list";
+
+#footer{
+	& .footer-background{
+		background-color:#000000;
+		//margin-bottom:20px;
+	}
+
+	& .footer-background-1{
+		background:none;
+	}
+}
+
+.juno-link-items{
+	@include horizontal-list(5px); 
+	color:darken(#ffffff, 60%);
+	font-size:14px;
+}
+
+.juno-copyright{
+	font-size:14px;
+	position:relative;
+	top:50px;
+}
+
+.juno-items-right{
+	@extend .navbar-right;
+	position:relative;
+	top:50px;
+}
+
+.row-footer-space{
+	margin-bottom:20px;
+}
+
+#footer-note{
+	//font-weight:bold;
+	font-size:16px;
+	//margin-top:100px;
+	text-align:center;
+	color:#606266;
+}
+
+/* End Homepage Footer stylesheet */

@@ -1,0 +1,584 @@
+<div style="z-index:9999;" id="error-warning" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="error-header modal-header">
+                <button type="button" class="sub-popup-close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="sub-warning-title fa-2x">Warning!</h4>
+            </div>
+            <div class="error-body modal-body">
+                    <div class="alert alert-success">
+                        <b>Success!</b> saved successfully
+                    </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn sub-btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container sub-row-space">
+<div class="juno-timeline col-md-offset-1">
+    <ul>
+      <li class="timeline-active-1">
+      <i class="icon-user"></i></li>
+      <li class="timeline-active-2"><i class="icon-users"></i></li>
+      <li class="timeline-active-3"><i class="icon-phone-1"></i></li>
+    </ul> 
+</div> 
+
+    <form name="" action="" method="POST" id="sub-security" role='form'>
+ <div class="timeline timeline-form-border col-md-8">
+        <!-- Section 1  -------------------------------------------------- -->
+    <div id="security-info" style="margin-top:50px;">
+        <div class="sub-join">
+            <h1 class="sub-reponsive-text">Practitioner: Security Information</h1>
+            <span class="sub-small-header" style="color:red;">All Fields Marked (*) Must Be Filled.</span>
+        </div>
+        <div class="sub-personal-form-inline">
+            <!-- Names -->
+            <div class="form-group">
+                <label class="sub-personal-label prac-name required">Name:</label>
+            </div>
+            <div class="form-group" >
+                <label class="sr-only" for="firstName">First Name</label>
+                <input type="text" name="firstName" class="form-control-1" id="firstName" placeholder="First Name">
+            </div>
+            <div class="form-group">
+                <label class="sr-only" for="lastName">Last Name</label>
+                <input type="text" name="lastName" class="form-control-1" id="lastName" placeholder="Last Name">
+            </div>
+            <div class="form-group">
+                <label class="sr-only" for="middleName">Middle Name</label>
+                <input type="text" name="middleName" class="form-control-1" id="middleName" placeholder="Middle Name">
+            </div>
+        </div>
+        <div class="sub-row-space"></div> 
+        <div class="sub-form-horizontal">
+            <div class="form-group">
+                <label for="licence" class="col-sm-2 col-md-3 sub-control-label required">Licence ID/Ref.NO.:</label>
+                <div class="col-sm-10 col-md-4">
+                    <input type="licence" name="licenceNumber" class="form-control-2" id="LicenceNumber" placeholder="Licence Number">
+                </div>
+            </div>
+            <div class="sub-row-space"></div> 
+            <div class="form-group">
+                <label for="email" class="col-sm-2 col-md-3 sub-control-label required">Email:</label>
+                <div class="col-sm-10 col-md-4">
+                    <input type="email" name="email" class="form-control-2" id="prac_email" placeholder="Email">
+                     <span class="help-block"></span>
+                </div>
+            </div>
+            <div class="sub-row-space"></div> 
+            <div class="form-group">
+                <label for="password" class="col-sm-2 col-md-3 sub-control-label required">Password:</label>
+                <div class="col-sm-10 col-md-4">
+                    <input type="password" name="password" class="form-control-2" id="prac_password" placeholder="Password">
+                    <span class="help-block"></span>
+                </div>
+            </div>
+            <div class="sub-row-space"></div> 
+            <div class=" form-group required">
+                <label for="password1" class="col-sm-2 col-md-3 sub-control-label required">Confirm Password:</label>
+                <div class="col-sm-10 col-md-4">
+                    <input type="password" name="confirmPassword" class="form-control-2" id="password1" placeholder="Confirm Password">
+                     <span class="help-block"></span>
+                </div>
+            </div>
+            <div class="sub-row-space"></div>
+            <div class="form-group">
+                <label for="terms" class="col-sm-2 col-md-3 sub-control-label required">Accept EULA:</label>
+                <div class="col-sm-offset-2 col-sm-10 sub-terms">
+                    <div class="checkbox">
+                        <input type="checkbox" value="true" name="terms"> <a href="" class="sub-accept-terms" >Statement of Terms & Responsibilities</a>
+                        <span class="help-block"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <div class="form-group">
+                        <ul class="sub-next-tabs">
+                              <li><a href="#subscription" class="btn sub-btn-cancel">Back</a></li>
+                              <li><a><span class="btn sub-btn-success personalNext">Next</span></a></li>
+                        </ul>     
+                      </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+        <!--  Section 1 - End ----  Section 2 --------------------------------------------------------------- -->
+    <div id="personal-info">
+        <div class="sub-join">
+            <h1 class="sub-reponsive-text">Practitioner: Personal Information</h1>
+            <span class="sub-small-header" style="color:red;">All Fields Marked (*) Must Be Filled.</span>
+        </div>
+        <div class="sub-form-horizontal">
+            <!-- Names -->
+            <div class="form-group">
+                <label for="age" class="col-sm-2 col-md-3 sub-control-label required">Age:</label>
+                <div class="col-sm-10 col-md-4">
+                    <input type="number" name="age" class="form-control-1" id="age" placeholder="Your Age">
+                </div>
+            </div>
+            <div class="sub-row-space"></div>
+            <div class="form-group">
+                <label  for="sex" class="col-sm-2 col-md-3 sub-control-label required">Sex:</label>
+                <div class="col-sm-10 col-md-4">
+                    <select class="form-control-1" name="sex">
+                        <option>--Select--</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                </div>
+            </div>
+            <div class="sub-row-space"></div>
+            <div class="form-group">
+                <label for="nationality" class="col-sm-2 col-md-3 sub-control-label required">Nationality:</label>
+                <div class="col-sm-10 col-md-4">
+                    <select class="form-control-1" name="nationality">
+                    </select>
+                </div>
+            </div>
+        <div class="sub-row-space"></div>
+            <div class="form-group">
+                <label for="maritalStatus" class="col-sm-2 col-md-3 sub-control-label required">Marital Status:</label>
+                <div class="col-sm-10 col-md-4">
+                    <select name="maritalStatus" class="form-control-1">
+                        <option>Single</option>
+                        <option>Married</option>
+                    </select>
+                </div>
+            </div>
+            <div class="sub-row-space"></div>
+            <div class="form-group">
+                <label for="validictory" class="col-sm-2 col-md-3 sub-control-label required">Validictory:</label>
+                <div class="col-sm-10 col-md-4">
+                    <select name="validictory" class="form-control-1">
+                        <option>--Select--</option>
+                        <option>Bachelors</option>
+                        <option>Diploma</option>
+                        <option>PhD</option>
+                    </select>
+                </div>
+            </div>
+        <div class="sub-row-space"></div>
+            <div class="form-group">
+                <label for="experince" class="col-sm-2 col-md-3 sub-control-label required">Personal Experience:</label>
+                <div class="col-sm-10 col-md-4">
+                    <select name="experience" class="form-control-1">
+                        <option>--Select--</option>
+                        <option>Below 5 years</option>
+                        <option>5-10 years</option>
+                        <option>10-25 years</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="sub-row-space"></div>
+        <h1 class="sub-reponsive-text"> Permanent Address </h1>
+        <div class="sub-row-space"></div>
+        <div class="sub-form-horizontal">
+            <!-- Names -->
+            <div class="form-group">
+                <label for="country" class="col-sm-2 col-md-3 sub-control-label required">Country:</label>
+                <div class="col-sm-10 col-md-4">
+                    <select name="country" class="form-control-1">
+                    </select>
+                </div>
+            </div>
+        <div class="sub-row-space"></div>
+            <div class="form-group">
+                <label for="state" class="col-sm-2 col-md-3 sub-control-label required">State / District:</label>
+                <div class="col-sm-10 col-md-4">
+                    <select name="state" class="form-control-1">
+                    </select>
+                </div>
+            </div>
+        <div class="sub-row-space"></div>
+            
+            <div class="form-group">
+                <label for="city" class="col-sm-2 col-md-3 sub-control-label">City:</label>
+                <div class="col-sm-10 col-md-4">
+                    <select name="city" class="form-control-1">
+                    </select>
+                </div>
+            </div>
+            <div class="sub-row-space"></div>
+                <div class="form-group">
+                    <label for="streetLine2" class="col-sm-2 col-md-3 sub-control-label">Street Line 1:</label>
+                    <div class="col-sm-10 col-md-4">
+                        <input type="text" name="streetLine1" class="form-control-1" id="streetLine2" placeholder="eg. MUK. No.3" value="">
+                    </div>
+                </div>
+                <div class="sub-row-space"></div>
+                <div class="form-group">
+                    <label for="streetLine1" class="col-sm-2 col-md-3 sub-control-label">Street Line 2:</label>
+                    <div class="col-sm-10 col-md-4">
+                        <input type="type" name="streetLine2" class="form-control-1" id="streetLine2" placeholder="eg. Livingstone Drive" value="">
+                    </div>
+                </div>
+            <div class="sub-row-space"></div>
+                <div class="form-group">
+                    <label for="zipCode" class="col-sm-2 col-md-3 sub-control-label required">Zip Code:</label>
+                    <div class="col-sm-10 col-md-4">
+                        <input type="type" name="zipCode" class="form-control-1" id="zipCode" placeholder="00001" value="">
+                    </div>
+                </div>
+        
+        <div class="sub-row-space"></div>
+            <div class="form-group">
+                <label for="email2" class="col-sm-2 col-md-3 sub-control-label">Area Code:</label>
+                <div class="col-sm-10 col-md-4">
+                    <input type="text" name="areaCode" class="form-control-1" id="areaCode" placeholder="256" value="">
+                </div>
+            </div>
+        <div class="sub-row-space"></div>
+            <div class="form-group">
+                <label for="email2" class="col-sm-2 col-md-3 sub-control-label">Postal Code:</label>
+                <div class="col-sm-10 col-md-4">
+                    <input type="text" name="postalCode" class="form-control-1" id="postalCode" placeholder="256" value="">
+                </div>
+            </div>
+        </div>
+        <div class="sub-row-space"></div>
+        <h1 class="sub-reponsive-text">Contact Address</h1>
+        <div class="sub-row-space"></div>
+        <div class="sub-form-horizontal">
+      <!-- Names -->
+        <div class="form-group">
+            <label for="email2" class="col-sm-2 col-md-3 sub-control-label required">Email Address:</label>
+                <div class="col-sm-10 col-md-4">
+                    <input type="email" name="email2" class="form-control-1" id="email2" placeholder="Alternative Email Address" value="">
+                </div>
+        </div>
+        <div class="sub-row-space"></div>
+        <div class="form-group">
+                <label for="code1" class="col-sm-2 col-md-3 sub-control-label required">Mobile Number:</label>
+                <div class="col-sm-10 col-md-4">
+                    <input type="text" name="mobiCode1" class="form-control-1" id="mobiCode1" max-length="25" placeholder="+256" value=""/>
+                </div>
+        </div>
+        <div class="sub-row-space"></div>
+        <div class="form-group">
+                <label for="code1" class="col-sm-2 col-md-3 sub-control-label">Land Line(Home) Number:</label>
+                <div class="col-sm-10 col-md-4">
+                    <input type="text" name="homeCode1" class="form-control-1" id="homeCode1" max-length="25" placeholder="+256" value="">
+                </div>
+        </div>
+        <div class="sub-row-space"></div> 
+        <div class="form-group">
+            <label for="code1" class="col-sm-2 col-md-3 sub-control-label required">Fax Number:</label>
+                <div class="col-sm-10 col-md-4">
+                    <input type="text" name="faxCode1" class="form-control-1" id="faxCode1" max-length="25" placeholder="+256" value="">
+                </div>
+        </div>
+        <div class="sub-row-space"></div> 
+        <div class="form-group">
+                <label for="upin" class="col-sm-2 col-md-3 sub-control-label">UPIN:</label>
+                <div class="col-sm-10 col-md-4">
+                    <input type="text" name="upin" class="form-control-1" id="upid" placeholder="0412135402" value="">
+                </div>
+        </div>
+        <div class="sub-row-space"></div>
+        <div class="form-group">
+                <label for="npi" class="col-sm-2 col-md-3 sub-control-label">NPI:</label>
+                <div class="col-sm-10 col-md-4">
+                    <input type="text" name="upi" class="form-control-1" id="npi" placeholder="0412135402" value="">
+                </div>
+        </div>
+    </div>
+        <div class="sub-row-space"></div>
+        <div class="sub-facilitator-form-inline clearfix">
+              <div class="col-sm-offset-2 col-sm-10">
+                  <div class="form-group">
+                    <ul class="sub-next-tabs">
+                          <li><a><span class="btn sub-btn-cancel securityBack">Back</span></a></li>
+                          <li><a><span  class="btn sub-btn-success proffessionalNext">Next</span></a></li>
+                    </ul>     
+                  </div>
+              </div>
+        </div>
+    </div>
+        <!-- Section 2 - End ----  Section 3 -------------------------------------------- -->
+
+<div id="proffessional-info">
+        <div class="sub-join">
+            <h1 class="sub-reponsive-text">Practitioner: Proffesional Information</h1>
+            <span class="sub-small-header" style="color:red;">All Fields Marked (*) Must Be Filled.</span>
+        </div>
+
+    <div class="sub-form-horizontal">
+      <!-- Names -->
+        <div class="form-group">
+            <label for="licence" class="col-sm-2 col-md-3 sub-control-label required">Confirm License:</label>
+            <div class="col-sm-10 col-md-4">
+                <input type="text" name="licence_number1" class="form-control-1" id="license" placeholder="Licence Number">
+                <span class="help-block"></span>
+            </div>
+        </div>
+   
+    <div class="sub-row-space"></div>
+
+        <div class="form-group">
+                <label for="licence" class="col-sm-2 col-md-3 sub-control-label required">Issuing Authority:</label>
+                <div class="col-sm-10 col-md-4">
+                    <input type="text" name="licence_issueAuthority" class="form-control-1" id="issuing" placeholder="Write Issuing Authority">
+                </div>
+            </div>
+    <div class="sub-row-space"></div>
+
+     
+        <div class="form-group">
+          <label for="dateOfIssue" class="col-sm-2 col-md-3 sub-control-label required">Date Of Issue:</label>
+           <div class="col-sm-10 col-md-4">
+                <input type="text" name="licence_issueDate" class="form-control-1" id="dateOfIssue" placeholder="Choose from the Calender">
+            </div>
+        </div>
+    <div class="sub-row-space"></div>
+
+        <div class="form-group">
+          <label for="dateOfExpiry" class="col-sm-2 col-md-3 sub-control-label required">Date Of Expiry:</label>
+            <div class="col-sm-10 col-md-4">
+                <input type="text" name="licence_expireDate" class="form-control-1" id="dateOfExpiry" placeholder="Choose from the Calender">
+            </div>
+        </div>
+    <div class="sub-row-space"></div>
+
+        <div class="form-group">
+            <label  for="sex" class="col-sm-2 col-md-3 sub-control-label required">Speciality:</label>
+                <div class="col-sm-10 col-md-4">
+                    <select name="speciality" class="form-control-1">
+                        <option>surgeon</option>
+                        <option>----------</option>
+                    </select>
+                </div>
+        </div>
+    </div>
+    <div class="sub-row-space"></div>
+
+<h1 class="sub-reponsive-text">Employment Status</h1>
+
+<div class="sub-row-space"></div>
+
+    <div class="sub-form-horizontal">
+        <div class="form-group">
+          <label for="nameOfOrganisation" class="col-sm-2 col-md-3 sub-control-label required">Name of Organisation of Employment:</label>
+            <div class="col-sm-10 col-md-4">
+                <input type="text" name="organ_name" class="form-control-1" id="nameOfOrganisation" placeholder="Write your Employer">
+            </div>
+        </div>
+    <div class="sub-row-space"></div>
+
+        <div class="form-group">
+            <label  for="ageOfOragnisation" class="col-sm-2 col-md-3 sub-control-label required">Age of Organisation of Employment:</label>
+            <div class="col-sm-10 col-md-4">
+                <select name="organ_age" class="form-control-1">
+                </select>
+            </div>
+        </div> 
+    <div class="sub-row-space"></div>
+        <div class="form-group">
+            <label  for="category" class="col-sm-2 col-md-3 sub-control-label">Category of Organisation:</label>
+            <div class="col-sm-10 col-md-4">
+                <select name="organ_category" class="form-control-1">
+                    <option>--Select--</option>
+                    <option>Surgeon</option>
+                    <option>----------</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="sub-row-space"></div>
+
+    <div class="sub-personal-form-inline">
+        <div class="form-group">
+        <label class="sub-personal-label required">Name of Employer:</label>
+        </div>
+      <div class="form-group">
+        <label class="sr-only" for="firstName">First Name</label>
+        <input type="text" name="employer_firstName" class="form-control-1" id="firstName" placeholder="First Name">
+      </div>
+      <div class="form-group">
+        <label class="sr-only" for="lastName">Last Name</label>
+        <input type="text" name="employer_lastName" class="form-control-1" id="lastName" placeholder="Last Name">
+      </div>
+
+      <div class="form-group">
+        <label class="sr-only" for="middleName">Middle Name</label>
+        <input type="text" name="employer_middleName" class="form-control-1" id="middleName" placeholder="Middle Name">
+      </div>
+    </div>
+    <div class="sub-row-space"></div>
+
+<h1 class="sub-reponsive-text">Address of Organisation </h1>
+    <div class="sub-row-space"></div>
+
+    <div class="sub-form-horizontal">
+            <!-- Names -->
+            <div class="form-group">
+                <label for="country" class="col-sm-2 col-md-3 sub-control-label required">Country:</label>
+                <div class="col-sm-10 col-md-4">
+                    <select name="organ_country" class="form-control-1">
+                    </select>
+                </div>
+            </div>
+        <div class="sub-row-space"></div>
+            <div class="form-group">
+                <label for="state" class="col-sm-2 col-md-3 sub-control-label required">State / District:</label>
+                <div class="col-sm-10 col-md-4">
+                    <select name="organ_state" class="form-control-1">
+                    </select>
+                </div>
+            </div>
+        <div class="sub-row-space"></div>
+            
+            <div class="form-group">
+                <label for="city" class="col-sm-2 col-md-3 sub-control-label">City:</label>
+                <div class="col-sm-10 col-md-4">
+                    <select name="organ_city" class="form-control-1">
+                    </select>
+                </div>
+            </div>
+            <div class="sub-row-space"></div>
+                <div class="form-group">
+                    <label for="streetLine2" class="col-sm-2 col-md-3 sub-control-label">Street Line 1:</label>
+                    <div class="col-sm-10 col-md-4">
+                        <input type="text" name="organ_streetLine1" class="form-control-1" id="streetLine1" placeholder="eg. MUK. No.3" value="">
+                    </div>
+                </div>
+                <div class="sub-row-space"></div>
+                <div class="form-group">
+                    <label for="streetLine1" class="col-sm-2 col-md-3 sub-control-label">Street Line 2:</label>
+                    <div class="col-sm-10 col-md-4">
+                        <input type="type" name="organ_streetLine2" class="form-control-1" id="streetLine2" placeholder="eg. Livingstone Drive" value="">
+                    </div>
+                </div>
+            <div class="sub-row-space"></div>
+                <div class="form-group">
+                    <label for="zipCode" class="col-sm-2 col-md-3 sub-control-label required">Zip Code:</label>
+                    <div class="col-sm-10 col-md-4">
+                        <input type="type" name="organ_zipCode" class="form-control-1" id="zipCode" placeholder="00001" value="">
+                    </div>
+                </div>
+        
+        <div class="sub-row-space"></div>
+            <div class="form-group">
+                <label for="email2" class="col-sm-2 col-md-3 sub-control-label">Area Code:</label>
+                <div class="col-sm-10 col-md-4">
+                    <input type="text" name="organ_areaCode" class="form-control-1" id="areaCode" placeholder="256" value="">
+                </div>
+            </div>
+        <div class="sub-row-space"></div>
+            <div class="form-group">
+                <label for="email2" class="col-sm-2 col-md-3 sub-control-label">Postal Code:</label>
+                <div class="col-sm-10 col-md-4">
+                    <input type="text" name="organ_postalCode" class="form-control-1" id="postalCode" placeholder="256" value="">
+                </div>
+            </div>
+        </div>
+        <div class="sub-row-space"></div>
+        <h1 class="sub-reponsive-text">Contact Address</h1>
+        <div class="sub-row-space"></div>
+        <div class="sub-form-horizontal">
+      <!-- Names -->
+        <div class="form-group">
+            <label for="email2" class="col-sm-2 col-md-3 sub-control-label required">Email Address:</label>
+                <div class="col-sm-10 col-md-4">
+                    <input type="email" name="email2" class="form-control-1" id="email2" placeholder="Alternative Email Address" value="">
+                </div>
+        </div>
+        <div class="sub-row-space"></div>
+        <div class="form-group">
+                <label for="code1" class="col-sm-2 col-md-3 sub-control-label required">Mobile Number:</label>
+                <div class="col-sm-10 col-md-4">
+                    <input type="text" name="mobiCode1" class="form-control-1" id="mobiCode1" max-length="25" placeholder="+256" value=""/>
+                </div>
+        </div>
+        <div class="sub-row-space"></div>
+        <div class="form-group">
+                <label for="code1" class="col-sm-2 col-md-3 sub-control-label">Land Line(Home) Number:</label>
+                <div class="col-sm-10 col-md-4">
+                    <input type="text" name="homeCode1" class="form-control-1" id="homeCode1" max-length="25" placeholder="+256" value="">
+                </div>
+        </div>
+        <div class="sub-row-space"></div> 
+        <div class="form-group">
+            <label for="code1" class="col-sm-2 col-md-3 sub-control-label required">Fax Number:</label>
+                <div class="col-sm-10 col-md-4">
+                    <input type="text" name="faxCode1" class="form-control-1" id="faxCode1" max-length="25" placeholder="+256" value="">
+                </div>
+        </div>
+    </div>
+    <div class="sub-row-space"></div>
+
+<h1 class="sub-reponsive-text">Contact Details of the Employer</h1>
+
+<div class="sub-row-space"></div>
+
+    <div class="sub-form-horizontal">
+        <div class="form-group sub-form-group">
+            <label for="website" class="col-sm-2 col-md-3 sub-control-label">Website:</label>
+            <div class="col-sm-10 col-md-4">
+              <input type="text" name="organ_website" class="form-control-1" id="website" placeholder="Website" value="">
+            </div>
+        </div>
+        <div class="sub-row-space"></div>
+        <div class="form-group">
+          <label for="code1" class="col-sm-2 col-md-3 sub-control-label required" >Mobile Number:</label>
+            <div class="col-sm-10 col-md-4">
+                <input type="text" name="organ_mobiCode1" class="form-control-1" id="mobiCode1" max-length="4" placeholder="+256" value="">
+            </div>
+        </div>
+        <div class="sub-row-space"></div>
+        <div class="form-group sub-form-group">
+          <label for="code1" class="col-sm-2 col-md-3 sub-control-label">Land Line(Home) Number:</label>
+            <div class="col-sm-10 col-md-4">
+                <input type="text" name="organ_homeCode1" class="form-control-1" id="homeCode1" max-length="4" placeholder="+256" value="">
+            </div>
+        </div>
+        <div class="sub-row-space"></div>
+      <div class="form-group">
+        <label for="email2" class="col-sm-2 col-md-3 sub-control-label required">Email Address of Employer:</label>
+            <div class="col-sm-10 col-md-4">
+                <input type="email" name="organ_email" class="form-control-1" id="email2" placeholder="Alternative Email Address" value="">
+            </div>
+      </div>
+      <div class="sub-row-space"></div>
+        <div class="form-group">
+          <label for="code1" class="col-sm-2 col-md-3 sub-control-label required">Fax Number:</label>
+            <div class="col-sm-10 col-md-4">
+                <input type="text" name="organ_faxCode1" class="form-control-1" id="faxCode1" max-length="4" placeholder="+256" value="">
+            </div>
+        </div>
+        <div class="sub-row-space"></div>
+   
+        <div class="form-group sub-form-group">
+            <label for="tourist" class="col-sm-2 col-md-3 sub-control-label">Nearest Tourism attraction to Premises:</label>
+            <div class="col-sm-10 col-md-4">
+              <input type="text" name="tourist" class="form-control-1" id="tourist" placeholder="Name the Tourist Attraction" value="">
+              <span class="help-block"></span>
+            </div>
+        </div>   
+    </div>
+    <div class="sub-row-space"></div> 
+    <div class="sub-facilitator-form-inline clearfix">
+              <div class="col-sm-offset-2 col-sm-10">
+                  <div class="form-group">
+                    <ul class="sub-next-tabs">
+                          <li><a><span class="btn sub-btn-cancel personalBack">Back</span></a></li>
+                          <li><a><input id="signUpButton" class="btn sub-btn-success" type="submit" value="Submit"></a></li>
+                    </ul>     
+                  </div>
+              </div>
+        </div>              
+    </div>
+
+
+ </div>
+        <!-- Section 3 - End -------------------------------------------------------------- -->
+</div>
+    </form>
+</div>   
